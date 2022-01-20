@@ -1,12 +1,14 @@
 <template>
   <v-app>
     <v-main>
-      <MergeFiles/>
+      <MergeFiles />
     </v-main>
+    <AppFooter />
   </v-app>
 </template>
 
 <script>
+import AppFooter from './components/AppFooter.vue'
 import MergeFiles from './components/MergeFiles.vue'
 
 export default {
@@ -14,6 +16,7 @@ export default {
 
   components: {
     MergeFiles,
+    AppFooter,
   },
 
   data: () => ({
